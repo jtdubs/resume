@@ -1,0 +1,116 @@
+\documentclass[letterpaper, 11pt]{article}
+
+\def\name    { Justin Tyler Dubs      }
+\def\phone   { (919) 637-1897         }
+\def\email   { jtdubs@eos.ncsu.edu    }
+\def\address { 1441 Collegiate Circle \\
+               Apt 102                \\
+               Raleigh, NC 27606      }
+
+\usepackage{Resume}
+
+\begin{document}
+    \begin{resume}
+        \begin{category}{Education}
+            \begin{block}
+                \heading {North Carolina State University} {Senior Year in B. S. of Computer Science Program}
+                         {Cumulative GPA: 3.2}             {Major GPA: 3.6}
+            \end{block}
+            \begin{block}
+                \textbf{Relevant Courses:}  \\
+                \begin{tabular}{@{} l l @{}}
+                    Artificial Intelligence         &   Computer Networks \emph{(graduate level)}               \\
+                    Advanced Operating Systems      &   Object--Oriented Language Theory \emph{(graduate level)}    
+                \end{tabular}
+            \end{block}
+            \begin{block}
+                \textbf{Senior Project:}                                   \\
+                -- Worked as lead developer of a small team of 5 students. \\
+                -- Developed Java bindings of the RPM API for RedHat.
+            \end{block}
+        \end{category}
+        \begin{category}{Experience}
+            \begin{block}
+                \heading {IBM}                      {Software Developer}
+                         {Raleigh, NC}              {February 2004 -- Present}
+                -- Worked part-time as a software developer within IBM's PC Devision.  \\
+                -- Took part in a fast--paced six month development cycle.             \\
+                -- Developed and partially tested a C++-based client application.      \\
+                -- Setup and managed the project's debian packages and informal build process.
+            \end{block}
+            \begin{block}
+                \heading {IBM}                      {Technical Intern}
+                         {RTP, NC}                  {September 2003 -- December 2003}
+                -- Took part in IBM's acclaimed Extreme Blue internship program.                    \\
+                -- Worked in a small team composed of three programmers and one business resource.  \\
+                -- Developed a prototype state--of--the--art PC life--cycle management system.      \\
+                -- Was responsible for automation of IUB and customization of Lifeboat.             \\
+                -- Gave technical and business--oriented presentations to IBM executives.
+            \end{block}
+            \begin{block}
+                \heading {planetibiz.com}           {Contract Developer}
+                         {RTP, NC}                  {January 2003 -- May 2003}
+                -- Developed a web--based newsletter distribution system in Perl, PHP and HTML.            \\
+                -- Implemented multi--threaded, network--oriented Perl code on Solaris.                    \\
+                -- Designed, implemented and was soley responsible for on--time completion of the project.
+            \end{block}
+            \begin{block}
+                \heading {IBM}                      {Software Tester}
+                         {RTP, NC}                  {January 2002 -- August 2002}
+                -- Worked full-time for 9 months in an internship with IBM's Software Group.            \\
+                -- Gained a working knowledge of z/OS and associated technologies.                      \\
+                -- Developed and ran test cases on WebSphere Enterprise Developer's z/OS components.    \\
+                -- Wrote simple COBOL, PL/I and Perl code.                                              \\
+                -- Debugged software systems implemented in Perl.
+            \end{block}
+            \begin{block}
+                \heading {The Patriot--News Company} {IT Technician}
+                         {Harrisburg, PA}            {May 1997 -- August 2001}
+                -- Worked full-time for 5 summers during high-school and early college.             \\
+                -- Maintained the company firewall running Checkpoint on Solaris.                   \\
+                -- Maintained the company e-mail server, also on Solaris.                           \\
+                -- Maintained the company Windows Domain Controller, on Windows 2000                \\
+                -- Provided technical support for more than 300 users on more than 300 machines.    \\
+                -- Developed a simple page-flow tracking system in Visual Basic.                    \\
+                -- Developed other applications in C++, HTML and Visual Basic when needed.
+            \end{block}
+        \end{category}
+        \begin{category}{Skills}
+            \begin{block}
+                \textbf{Computer Languages:} (in order of familiarity)                                  \\
+                \begin{tabular}{@{} l l l l l @{}}
+                    C           &   C++         &   Lisp        &   Java        &   Perl                \\
+                    Python      &   x86 asm     &   HTML        &   SQL         &   Shell Scripting     \\
+                    SML         &   Scheme      &   PHP         &   Smalltalk   &   Visual Basic
+                \end{tabular}
+            \end{block}
+            \begin{block}
+                \textbf{Personal Projects:}                                                                     \\
+                -- \emph{Tao}: Designing and implementing a lisp--like computer language.                       \\
+                -- \emph{Revelation}: Contributing to the design and implementation of a 3D Graphics Engine.    \\
+                -- \emph{cl-lambda-shorthand}: A lisp package to add a shorthand for anonymous functions.       \\
+                -- \emph{cl-promise}: A simple lisp implementation of promise-based threading.                  \\
+                -- \emph{cl-repl-server}: A lisp package which lets one interact with lisp via a socket.        \\
+                -- \emph{cl-units}: A lisp package which adds numbers with associated units (ie. 5 feet).       \\
+                -- \emph{vee}: A unix utility to multiplex the input of a program from both stdin and a fifo.   \\
+                -- \emph{lisp-bridge}: A connection between vim and lisp running on another terminal.
+            \end{block}
+            \begin{block}
+                \textbf{Strong skills in:}                                          \\
+                -- Object-oriented design methodologies.                            \\
+                -- Multi-threaded programming.                                      \\
+                -- Network security and encryption.                                 \\
+                -- Computer language theory.
+            \end{block}
+        \end{category}
+        \begin{category}{Interests}
+            \begin{block}
+                -- Computer language design.                                        \\
+                -- Lisp--style macros and their effect on software design.          \\
+                -- Artificial intelligence.                                         \\
+                -- Physics simulations.                                             \\
+                -- Development environment design and tooling.
+            \end{block}
+        \end{category}
+    \end{resume}
+\end{document}
