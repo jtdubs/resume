@@ -1,55 +1,108 @@
 \documentclass[letterpaper, 11pt]{article}
 
 \def\name    { Justin Tyler Dubs      }
-\def\phone   { (919) 637-1897         }
-\def\email   { jtdubs@eos.ncsu.edu    }
-\def\address { 1441 Collegiate Circle \\
-               Apt 102                \\
-               Raleigh, NC 27606      }
+\def\phone   { (919) 901-0712         }
+\def\email   { jtdubs@gmail.com       }
+\def\address { 5719 Russell Road      \\
+               Durham, NC 27712       }
 
-\usepackage{Resume}
+\usepackage{resume}
 
 \begin{document}
     \begin{resume}
-        \begin{category}{Education}
+        \begin{category}{Experience}
             \begin{block}
-                \heading {North Carolina State University} {Senior Year in B. S. of Computer Science Program}
-                         {Cumulative GPA: 3.2}             {Major GPA: 3.6}
+                \heading {Lenovo Skylight} {January 2009 -- Present}
+                         {Lenovo}          {Software Architect and Lead Developer}
+                \par
+                Lenovo Skylight marks Lenovo's entry into the emerging Smartbook market.
+                It is an ARM/Linux notebook with a custom software stack that focuses
+                on multimedia consumption and internet connectivity.  It will be sold
+                globally starting in June of this year.
+                \\[1ex]
+                The Multimedia components are responsible for indexing the user's content on all
+                attached media devices, as well as providing the User Interfaces through which the user will
+                consume his content.
+                \\[1ex]
+                Responsibilities: \\
+                -- Designed and prototyped the multimedia and indexing components. \\
+                -- Lead a small team of developers to complete development of these solutions. \\
+                -- Lead a two week workshop in Beijing, China to transfer ownership of these components out of research.
+                \\[1ex]
+                Principal technologies: \emph{Python, GTK, GStreamer.} \\
+                Notable libraries: \emph{mutagen, inotify, clutter.}
             \end{block}
             \begin{block}
-                \textbf{Relevant Courses:}  \\
-                \begin{tabular}{@{} l l @{}}
-                    Artificial Intelligence         &   Computer Networks \emph{(graduate level)}               \\
-                    Advanced Operating Systems      &   Object--Oriented Language Theory \emph{(graduate level)}    
-                \end{tabular}
+                \heading {Lenovo Constant Connect} {March 2007 -- September 2009}
+                         {Lenovo}                  {Software Architect and Developer}
+                \par
+                Lenovo Constant Connect is a Large Enterprise market offering that enables
+                seamless mail flow to and from your PC by using your Blackberry as a mail
+                gateway.  Your PC and Blackberry need not even be network connected at mail
+                composition time.  The next time either device is network connected, even if your
+                PC is asleep, mail will be synchronized.
+                \\[1ex]
+                This distributed system consists of a set of Windows services, an Express Card
+                form-factor embedded computer, and a set of Blackberry services.
+                \\[1ex]
+                Responsibilities: \\
+                -- Design and implementation of communication and data synchronization framework. \\
+                -- Design and implementation of all value-add software for embedded system. \\
+                -- Design and implementation of PC system services. \\
+                -- Co-design and implementation of hardware control logic for embedded system.
+                \\[1ex]
+                Principal technologies: \emph{ C\#, .NET, .NET CF, Win CE 5.0 }
             \end{block}
             \begin{block}
-                \textbf{Senior Project:}                                   \\
-                -- Worked as lead developer of a small team of 5 students. \\
-                -- Developed Java bindings of the RPM API for RedHat.
+                \heading {Lenovo TechBuddy} {March 2006 -- December 2006}
+                         {Lenovo}           {Software Developer}
+                \par
+                Business description of project here.
+                \\[1ex]
+                Technical description of relevant part of project here.
+                \\[1ex]
+                Responsibilities: \\
+                -- Verb Noun-Clause 1. \\
+                -- Verb Noun-Clause 2. \\
+                -- Verb Noun-Clause 3. \\
+                \\[1ex]
+                Principal technologies: \emph{ Magic, Beans }
             \end{block}
         \end{category}
         \begin{category}{Experience}
             \begin{block}
-                \heading {IBM}                      {Software Developer}
-                         {Raleigh, NC}              {February 2004 -- Present}
-                -- Worked part-time as a software developer within IBM's PC Devision.  \\
-                -- Took part in a fast--paced six month development cycle.             \\
-                -- Developed and partially tested a C++-based client application.      \\
-                -- Setup and managed the project's debian packages and informal build process.
+                \heading {Secure Internet Gateway Appliance} {May 2005 -- February 2006}
+                         {IBM}                               {Software Developer}
+                \par
+                Business description of project here.
+                \\[1ex]
+                Technical description of relevant part of project here.
+                \\[1ex]
+                Responsibilities: \\
+                -- Verb Noun-Clause 1. \\
+                -- Verb Noun-Clause 2. \\
+                -- Verb Noun-Clause 3. \\
+                \\[1ex]
+                Principal technologies: \emph{ Magic, Beans }
             \end{block}
             \begin{block}
-                \heading {IBM}                      {Technical Intern}
-                         {RTP, NC}                  {September 2003 -- December 2003}
-                -- Took part in IBM's acclaimed Extreme Blue internship program.                    \\
-                -- Worked in a small team composed of three programmers and one business resource.  \\
-                -- Developed a prototype state--of--the--art PC life--cycle management system.      \\
-                -- Was responsible for automation of IUB and customization of Lifeboat.             \\
-                -- Gave technical and business--oriented presentations to IBM executives.
+                \heading {IBM Extreme Blue Internship} {May 2005 -- February 2006}
+                         {IBM}                         {Development Intern}
+                \par
+                Business description of project here.
+                \\[1ex]
+                Technical description of relevant part of project here.
+                \\[1ex]
+                Responsibilities: \\
+                -- Verb Noun-Clause 1. \\
+                -- Verb Noun-Clause 2. \\
+                -- Verb Noun-Clause 3. \\
+                \\[1ex]
+                Principal technologies: \emph{ Magic, Beans }
             \end{block}
             \begin{block}
-                \heading {planetibiz.com}           {Contract Developer}
-                         {RTP, NC}                  {January 2003 -- May 2003}
+                \heading {planetibiz.com} {Contract Developer}
+                         {RTP, NC}        {January 2003 -- May 2003}
                 -- Developed a web--based newsletter distribution system in Perl, PHP and HTML.            \\
                 -- Implemented multi--threaded, network--oriented Perl code on Solaris.                    \\
                 -- Designed, implemented and was soley responsible for on--time completion of the project.
@@ -73,43 +126,6 @@
                 -- Provided technical support for more than 300 users on more than 300 machines.    \\
                 -- Developed a simple page-flow tracking system in Visual Basic.                    \\
                 -- Developed other applications in C++, HTML and Visual Basic when needed.
-            \end{block}
-        \end{category}
-        \begin{category}{Skills}
-            \begin{block}
-                \textbf{Computer Languages:} (in order of familiarity)                                  \\
-                \begin{tabular}{@{} l l l l l @{}}
-                    C           &   C++         &   Lisp        &   Java        &   Perl                \\
-                    Python      &   x86 asm     &   HTML        &   SQL         &   Shell Scripting     \\
-                    SML         &   Scheme      &   PHP         &   Smalltalk   &   Visual Basic
-                \end{tabular}
-            \end{block}
-            \begin{block}
-                \textbf{Personal Projects:}                                                                     \\
-                -- \emph{Tao}: Designing and implementing a lisp--like computer language.                       \\
-                -- \emph{Revelation}: Contributing to the design and implementation of a 3D Graphics Engine.    \\
-                -- \emph{cl-lambda-shorthand}: A lisp package to add a shorthand for anonymous functions.       \\
-                -- \emph{cl-promise}: A simple lisp implementation of promise-based threading.                  \\
-                -- \emph{cl-repl-server}: A lisp package which lets one interact with lisp via a socket.        \\
-                -- \emph{cl-units}: A lisp package which adds numbers with associated units (ie. 5 feet).       \\
-                -- \emph{vee}: A unix utility to multiplex the input of a program from both stdin and a fifo.   \\
-                -- \emph{lisp-bridge}: A connection between vim and lisp running on another terminal.
-            \end{block}
-            \begin{block}
-                \textbf{Strong skills in:}                                          \\
-                -- Object-oriented design methodologies.                            \\
-                -- Multi-threaded programming.                                      \\
-                -- Network security and encryption.                                 \\
-                -- Computer language theory.
-            \end{block}
-        \end{category}
-        \begin{category}{Interests}
-            \begin{block}
-                -- Computer language design.                                        \\
-                -- Lisp--style macros and their effect on software design.          \\
-                -- Artificial intelligence.                                         \\
-                -- Physics simulations.                                             \\
-                -- Development environment design and tooling.
             \end{block}
         \end{category}
     \end{resume}

@@ -1,4 +1,4 @@
-\ProvidesPackage{Resume}
+\ProvidesPackage{resume}
 
 \usepackage[bookmarks=false, colorlinks=true, pdftitle={Resume of \name}, pdfauthor={\name}, urlcolor=cyan, pdftex]{hyperref}
 
@@ -12,6 +12,7 @@
 \addtolength{\textwidth}{2.2in}
 \addtolength{\textheight}{2.4in}
 \setlength{\parindent}{0in}
+\setlength{\parskip}{2ex}
 
 \newlength{\resumeheadingwidth}
 \newlength{\resumebodywidth}
@@ -20,41 +21,41 @@
 \setlength{\resumebodywidth}{5.8in}
 
 \newenvironment{resume}{
-	\begin{minipage}{\textwidth}
-		\hspace{\stretch{2}}
+    \begin{minipage}{\textwidth}
+        \hspace{\stretch{2}}
         \makebox[\width]{\huge \textbf{\name}}
-		\hspace{\stretch{2}}
-        \parbox{1.5in}{\address}
+        \hspace{\stretch{2}}
+        \parbox[b]{1.5in}{\address}
         \hspace{\stretch{1}}
-        \parbox[b]{1.4in}{\phone \\ \href{mailto:\email}{\email}}
+        \parbox[b]{1.5in}{\phone \\ \href{mailto:\email}{\email}}
         \rule{\textwidth}{1pt}
-	\end{minipage}
+    \end{minipage}
     \bigskip
 }{
 }
 
 \newenvironment{category}[1]{
-	\begin{minipage}{\textwidth}
-		\begin{minipage}[t]{\resumeheadingwidth}
-			\textbf{#1}
-		\end{minipage}
-		\begin{minipage}[t]{\resumebodywidth}
+    \begin{minipage}{\textwidth}
+        \begin{minipage}[t]{\resumeheadingwidth}
+            \textbf{#1}
+        \end{minipage}
+        \begin{minipage}[t]{\resumebodywidth}
 }{
-		\end{minipage}
-	\end{minipage}
+        \end{minipage}
+    \end{minipage}
     \smallskip
 }
 
 \newcommand{\heading}[4]{
-	\begin{tabular*}{\resumebodywidth}[t]{@{} l @{\extracolsep{\fill}} r @{}}
-	\textbf{#1}		&	\emph{#3}		\\
-	\emph{#2}		&	\emph{#4}	
-	\end{tabular*}
+    \begin{tabular*}{\resumebodywidth}[t]{@{} l @{\extracolsep{\fill}} r @{}}
+    \textbf{#1}     &   \emph{#3}       \\
+    \emph{#2}       &   \emph{#4}   
+    \end{tabular*}
 }
 
 \newenvironment{block}{
-	\begin{minipage}[t]{\resumebodywidth}
+    \begin{minipage}[t]{\resumebodywidth}
 }{
     \bigskip
-	\end{minipage}
+    \end{minipage}
 }
