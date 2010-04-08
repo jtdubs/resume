@@ -12,13 +12,13 @@
 \addtolength{\textwidth}{2.2in}
 \addtolength{\textheight}{2.4in}
 \setlength{\parindent}{0in}
-\setlength{\parskip}{2ex}
+\setlength{\parskip}{1ex}
 
 \newlength{\resumeheadingwidth}
 \newlength{\resumebodywidth}
 
-\setlength{\resumeheadingwidth}{1.0in}
-\setlength{\resumebodywidth}{6.2in}
+\setlength{\resumeheadingwidth}{1.2in}
+\setlength{\resumebodywidth}{6.0in}
 
 \newenvironment{resume}{
     \begin{minipage}{\textwidth}
@@ -28,9 +28,8 @@
         \parbox[b]{1.5in}{\address}
         \hspace{\stretch{1}}
         \parbox[b]{1.5in}{\phone \\ \href{mailto:\email}{\email}}
-        \rule{\textwidth}{1pt}
+        \rule[1ex]{\textwidth}{1pt}
     \end{minipage}
-    \bigskip
 }{
 }
 
@@ -43,19 +42,34 @@
 }{
         \end{minipage}
     \end{minipage}
-    \smallskip
+}
+
+\newenvironment{subcategory}[1]{
+    \begin{minipage}{\textwidth}
+        \begin{minipage}[t]{\resumeheadingwidth}
+            \emph{#1}
+        \end{minipage}
+        \begin{minipage}[t]{\resumebodywidth}
+}{
+        \end{minipage}
+    \end{minipage}
 }
 
 \newcommand{\heading}[4]{
     \begin{tabular*}{\resumebodywidth}[t]{@{} l @{\extracolsep{\fill}} r @{}}
     \textbf{#1}     &   \emph{#3}       \\
-    \emph{#2}       &   \emph{#4}   
+    \emph{#2}       &   \emph{#4}
+    \end{tabular*}
+}
+
+\newcommand{\subheading}[2]{
+    \begin{tabular*}{\resumebodywidth}[t]{@{} l @{\extracolsep{\fill}} r @{}}
+    \textbf{#1}     &   \emph{#2}
     \end{tabular*}
 }
 
 \newenvironment{block}{
     \begin{minipage}[t]{\resumebodywidth}
 }{
-    \bigskip
     \end{minipage}
 }
