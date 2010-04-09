@@ -54,16 +54,22 @@
     \end{minipage}
 }
 
-\newcommand{\heading}[4]{
+\newcommand{\degree}[4]{
     \begin{tabular*}{\resumebodywidth}[t]{@{} l @{\extracolsep{\fill}} r @{}}
-    \textbf{#1}     &   \emph{#3}       \\
-    \emph{#2}       &   \emph{#4}
+    \textbf{#1} & \emph{#3} \\
+    \emph{#2}   & \emph{#4}
     \end{tabular*}
 }
 
-\newcommand{\subheading}[2]{
+\newcommand{\position}[2]{
     \begin{tabular*}{\resumebodywidth}[t]{@{} l @{\extracolsep{\fill}} r @{}}
-    \textbf{#1}     &   \emph{#2}
+    \textbf{#1} & \emph{#2}
+    \end{tabular*}
+}
+
+\newcommand{\project}[2]{
+    \begin{tabular*}{\resumebodywidth}[t]{@{} l @{\extracolsep{\fill}} r @{}}
+    \textbf{#1} & \emph{#2}
     \end{tabular*}
 }
 
