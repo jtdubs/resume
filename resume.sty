@@ -30,23 +30,45 @@
         \parbox[b]{1.5in}{\phone \\ \href{mailto:\email}{\email}}
         \rule[1ex]{\textwidth}{1pt}
     \end{minipage}
+    \\[2ex]
 }{
 }
 
-\newenvironment{category}[1]{
+\newenvironment{position}[3]{
     \begin{minipage}{\textwidth}
         \begin{minipage}[t]{\resumeheadingwidth}
             \textbf{#1}
         \end{minipage}
         \begin{minipage}[t]{\resumebodywidth}
-}{ \end{minipage}
+            \begin{tabular*}{\resumebodywidth}[t]{@{} l @{\extracolsep{\fill}} r @{}}
+                \textbf{#2} & \emph{#3}
+            \end{tabular*}
+}{
+        \bigskip
+        \end{minipage}
     \end{minipage}
 }
 
-\newenvironment{subcategory}[1]{
+\newenvironment{project}[3]{
     \begin{minipage}{\textwidth}
         \begin{minipage}[t]{\resumeheadingwidth}
             \emph{#1}
+        \end{minipage}
+        \begin{minipage}[t]{\resumebodywidth}
+            \begin{tabular*}{\resumebodywidth}[t]{@{} l @{\extracolsep{\fill}} r @{}}
+                \textbf{#2} & \emph{#3}
+            \end{tabular*}
+}{
+        \bigskip
+        \end{minipage}
+    \end{minipage}
+}
+
+
+\newenvironment{education}[0]{
+    \begin{minipage}{\textwidth}
+        \begin{minipage}[t]{\resumeheadingwidth}
+            \textbf{Education}
         \end{minipage}
         \begin{minipage}[t]{\resumebodywidth}
 }{
@@ -59,22 +81,5 @@
     \textbf{#1} & \emph{#3} \\
     \emph{#2}   & \emph{#4}
     \end{tabular*}
-}
-
-\newcommand{\position}[2]{
-    \begin{tabular*}{\resumebodywidth}[t]{@{} l @{\extracolsep{\fill}} r @{}}
-    \textbf{#1} & \emph{#2}
-    \end{tabular*}
-}
-
-\newcommand{\project}[2]{
-    \begin{tabular*}{\resumebodywidth}[t]{@{} l @{\extracolsep{\fill}} r @{}}
-    \textbf{#1} & \emph{#2}
-    \end{tabular*}
-}
-
-\newenvironment{block}{
-    % \begin{minipage}[t]{\resumebodywidth}
-}{
-    % \end{minipage}
+    \smallskip
 }
